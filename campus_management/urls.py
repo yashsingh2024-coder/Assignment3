@@ -1,5 +1,5 @@
 """
-URL configuration for college_management project.
+URL configuration for campus_management project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.1/topics/http/urls/
@@ -17,11 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from college_management import views
+from campus_management import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",views.home),
-    path("student/",include("students.urls")),
-    path("faculty/",include("faculty.urls")),
+    path("student/",include("student_portal.urls")),
+    path("teaching_staff/",include("teaching_staff.urls")),
 ]

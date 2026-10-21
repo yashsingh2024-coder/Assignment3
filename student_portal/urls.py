@@ -1,5 +1,5 @@
 from django.urls import path
-from students import views
+from student_portal import views
 
 urlpatterns = [
     path("",views.student_home),
